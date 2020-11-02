@@ -1,0 +1,3 @@
+ng new ng-native-testapp --style=scss --routing=true --prefix=ng-ns
+
+ng new --c=@nativescript/schematics --name= ng-native-testapp --shared --style=scss --routing=true --prefix=ng-ns

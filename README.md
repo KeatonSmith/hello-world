@@ -1,6 +1,6 @@
-# HelloWorld
+# 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0-beta.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0.
 
 ## Development server
 
@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ 
+ 
+
+
+
+
+docker container run -d -p 8082:8080 -v Jenkins-Conf:/var/jenkins_home --name jenkins-local-saved jenkins/jenkins:lts
