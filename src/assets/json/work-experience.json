@@ -1,0 +1,43 @@
+[
+    {
+        "position": "Software Automation Engineer",
+        "startDate": "Sept 2020",
+        "endDate": "Current",
+        "location": "Columbus, OH",
+        "employer": "Olive",
+        "description": "I am currently working there",
+        "bulletPoints": [
+            "Somethihng",
+            "Blaj halajsd",
+            "asdsadasdasd"
+        ],
+        "links": [
+            {
+                "title":"Something",
+                "url": "www.google.com"
+            }
+        ],
+        "image": "/assets/images/olive.jfif"
+    },
+    {
+        "position": "IT Application Developer",
+        "startDate": "Jun 2019",
+        "endDate": "Sept 2020",
+        "location": "Columbus, OH",
+        "employer": "Nationwide",
+        "description": "I did stuff",
+        "bulletPoints": [
+            "Somethihng",
+            "Blaj halajsd",
+            "asdsadasdasd"
+        ],
+        "links": [
+            {
+                "title":"Something",
+                "url": "www.google.com"
+            }
+        ],
+        "image": "/assets/images/nw.jfif"
+
+    }
+]

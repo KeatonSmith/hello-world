@@ -1,1 +1,54 @@
-<p>about-me works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 visual col-margin">
+      <div class="experience-box row row-margin m-0">
+        <img
+          src="assets\images\ProfilePic.png"
+          style="width: 100%"
+          alt="ProfilePic"
+        />
+        <div class="m-1 p-1">
+          <h2>Keaton Smith</h2>
+          <div>keatonsmith510@gmail.com</div>
+          <div>(334)-538-1572</div>
+          <div>Columbus, OH</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md col-margin">
+      <div class="experience-box visual row row-margin">
+        <div class="block-container" *ngIf="workExperience">
+          <h2>Work Experience</h2>
+          <div *ngFor="let job of workExperience" class="work-experience-block">
+            <div class="employer"><label><img
+              src={{job.image}}
+              style="width: 50px; height: auto;"
+              [alt]="job.employer + 'Image'"
+            /></label>{{ job.position }} / {{ job.employer }}</div>
+            <div class="tenure">
+              {{ job.startDate }} -
+              <label [ngClass]="job.endDate == 'Current' ? 'current' : ''">{{
+                job.endDate
+              }}</label>
+            </div>
+            <div>{{ job.location }}</div>
+            <div>{{ job.description }}</div>
+            <ul>
+              <li *ngFor="let point of job.bulletPoints">{{ point }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="experience-box visual row row-margin">
+        <div class="block-container" *ngIf="true">
+          <h2>Education</h2>
+        </div>
+      </div>
+      <div class="experience-box visual row row-margin">
+        <div class="block-container" *ngIf="true">
+          <h2>Personal Projects</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

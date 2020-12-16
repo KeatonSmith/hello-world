@@ -24,12 +24,13 @@ img {
     overflow: hidden;
     background-color: $site-accent;
     padding: 20px 10px;
-    border-bottom: 5px solid $site-orange;
+    border-bottom: 5px solid $site-main-color;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .header a {
     float: left;
-    color: $site-orange;
+    color: $site-main-color;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -49,7 +50,7 @@ img {
   }
   
   .header a.active {
-    background-color: $site-orange;
+    background-color: $site-main-color;
     color: white;
   }
   
