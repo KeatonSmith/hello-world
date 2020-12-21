@@ -25,12 +25,15 @@
 }
 
 .work-experience-block {
-    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding-top: 15px;
 }
 
 .current {
     background-color: $site-main-color;
     color: white;
+    padding: 1px 6px;
+    border-radius: 4px;
 }
 
 .tenure {
@@ -43,6 +46,22 @@
     width: 100%;
 }
 
-.employer{
+.employer {
+    font-size: 20px;
+}
+
+.company-logo {
+    padding-right: 15px;
+}
+
+.detail-list {
+    list-style-type: square;
+}
+
+.position {
     font-weight: bold;
+}
+
+.company {
+    font-weight: normal;
 }

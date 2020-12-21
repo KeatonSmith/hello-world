@@ -20,11 +20,20 @@
         <div class="block-container" *ngIf="workExperience">
           <h2>Work Experience</h2>
           <div *ngFor="let job of workExperience" class="work-experience-block">
-            <div class="employer"><label><img
-              src={{job.image}}
-              style="width: 50px; height: auto;"
-              [alt]="job.employer + 'Image'"
-            /></label>{{ job.position }} / {{ job.employer }}</div>
+            <div class="employer">
+              <label class="company-logo">
+                <img
+                  src="{{ job.image }}"
+                  style="width: 50px; height: auto"
+                  [alt]="job.employer + 'Image'"
+                />
+              </label>
+              <label>
+                <label class="position">{{ job.position }}</label>
+                <br />
+                <label class="company">{{ job.employer }}</label>
+              </label>
+            </div>
             <div class="tenure">
               {{ job.startDate }} -
               <label [ngClass]="job.endDate == 'Current' ? 'current' : ''">{{
@@ -33,7 +42,7 @@
             </div>
             <div>{{ job.location }}</div>
             <div>{{ job.description }}</div>
-            <ul>
+            <ul class="detail-list">
               <li *ngFor="let point of job.bulletPoints">{{ point }}</li>
             </ul>
           </div>

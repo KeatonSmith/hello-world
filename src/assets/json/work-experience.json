@@ -1,43 +1,121 @@
 [
-    {
-        "position": "Software Automation Engineer",
-        "startDate": "Sept 2020",
-        "endDate": "Current",
-        "location": "Columbus, OH",
-        "employer": "Olive",
-        "description": "I am currently working there",
-        "bulletPoints": [
-            "Somethihng",
-            "Blaj halajsd",
-            "asdsadasdasd"
-        ],
-        "links": [
-            {
-                "title":"Something",
-                "url": "www.google.com"
-            }
-        ],
-        "image": "/assets/images/olive.jfif"
-    },
-    {
-        "position": "IT Application Developer",
-        "startDate": "Jun 2019",
-        "endDate": "Sept 2020",
-        "location": "Columbus, OH",
-        "employer": "Nationwide",
-        "description": "I did stuff",
-        "bulletPoints": [
-            "Somethihng",
-            "Blaj halajsd",
-            "asdsadasdasd"
-        ],
-        "links": [
-            {
-                "title":"Something",
-                "url": "www.google.com"
-            }
-        ],
-        "image": "/assets/images/nw.jfif"
-
-    }
+  {
+    "position": "Software Automation Engineer",
+    "startDate": "Sept 2020",
+    "endDate": "Current",
+    "location": "Columbus, OH",
+    "employer": "Olive",
+    "description": "I am currently working there",
+    "bulletPoints": ["Somethihng", "Blaj halajsd", "asdsadasdasd"],
+    "links": [
+      {
+        "title": "Something",
+        "url": "www.google.com"
+      }
+    ],
+    "image": "/assets/images/olive.jfif"
+  },
+  {
+    "position": "IT Application Developer",
+    "startDate": "Jun 2019",
+    "endDate": "Sept 2020",
+    "location": "Columbus, OH",
+    "employer": "Nationwide",
+    "description": "",
+    "bulletPoints": [
+      "Maintain and extend large pre-existing code bases in AngularJS, Angular 7, and Java.",
+      "Develop responsive, robust, and optimized web pages capable of integrating and presenting multiple data sources.",
+      "Migrate legacy code from AngularJS to Angular 7.",
+      "Cooperate in an agile team to deliver coordinated solutions for business needs. ",
+      "Leverage tools such as Jenkins and Concourse for CI/CD.",
+      "Utilize New Relic and Contrast for monitoring capabilities."
+    ],
+    "links": [
+      {
+        "title": "Something",
+        "url": "www.google.com"
+      }
+    ],
+    "image": "/assets/images/nw.jfif"
+  },
+  {
+    "position": "President / Founder",
+    "startDate": "Sep 2017",
+    "endDate": "May 2019",
+    "location": "Bowling Green, OH",
+    "employer": "Falcon eSports (BGSU Student Organization)",
+    "description": "",
+    "bulletPoints": [
+      "Organized and operated weekly competitive gaming events on campus.",
+      "Delegated responsibilities amongst cabinet members to represent different gaming communities and organize new events for the students.",
+      "Coordinated with local schools to create inter-collegiate competitions.",
+      "Developed promotional materials such as posters, fliers, stream overlays and online advertisements for events."
+    ],
+    "links": [
+      {
+        "title": "Something",
+        "url": "www.google.com"
+      }
+    ],
+    "image": "/assets/images/bgesports.png"
+  },
+  {
+    "position": "Test Automation Developer Intern",
+    "startDate": "May 2018",
+    "endDate": "Aug 2018",
+    "location": "Columbus, OH",
+    "employer": "Nationwide",
+    "description": "",
+    "bulletPoints": [
+      "Worked in an existing test automation code base for SOAP and REST web services for enterprise customer information files.",
+      "Developed new tests in Gherkin format from the ground-up to cover more test cases."
+    ],
+    "links": [
+      {
+        "title": "Something",
+        "url": "www.google.com"
+      }
+    ],
+    "image": "/assets/images/nw.jfif"
+  },
+  {
+    "position": "Software Developer Intern",
+    "startDate": "May 2017",
+    "endDate": "Aug 2017",
+    "location": "Columbus, OH",
+    "employer": "Nationwide",
+    "description": "",
+    "bulletPoints": [
+      "Adapted legacy systems into modern programming paradigms.",
+      "Ensured the quality of software that was actively shipped to customers in personal lines."
+    ],
+    "links": [
+      {
+        "title": "Something",
+        "url": "www.google.com"
+      }
+    ],
+    "image": "/assets/images/nw.jfif"
+  },
+  {
+    "position": "Take-Out-Specialist",
+    "startDate": "April 2015",
+    "endDate": "Jan 2017",
+    "location": "Louisville, KY",
+    "employer": "Chipotle Mexican Grill",
+    "description": "",
+    "bulletPoints": [
+      "Increase online and catering sales through marketing techniques, promotions, and great customer service",
+      "Ensure proper functioning of restaurant through communication between managers and crew members",
+      "Provide leadership on front line operations during peak restaurant hours",
+      "Train newly hired employees to achieve high standards"
+    ],
+    "links": [
+      {
+        "title": "Something",
+        "url": "www.google.com"
+      }
+    ],
+    "image": "/assets/images/cmg.png"
+  }
 ]
