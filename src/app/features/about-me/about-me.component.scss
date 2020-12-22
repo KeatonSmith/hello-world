@@ -1,67 +1,86 @@
 @import "./../../../styles.scss";
 
 .about-me-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .experience-box {
 }
 
 .visual {
-    // border: 1px solid black;
-    min-height: 20px;
-    min-width: 20px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  // border: 1px solid black;
+  min-height: 20px;
+  min-width: 20px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .col-margin {
-    margin: 10px 10px 10px 10px;
-    padding: 0px;
+  margin: 10px 10px 10px 10px;
+  padding: 0px;
 }
 
 .row-margin {
-    margin: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .work-experience-block {
-    border-top: 1px solid gray;
-    padding-top: 15px;
+  border-top: 1px solid #80808040;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .current {
-    background-color: $site-main-color;
-    color: white;
-    padding: 1px 6px;
-    border-radius: 4px;
+  background-color: $site-main-color;
+  color: white;
+  padding: 1px 6px;
+  border-radius: 4px;
 }
 
 .tenure {
-    color: $site-main-color;
+  color: $site-main-color;
+  font-size: 17px;
 }
 
 .block-container {
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
 }
 
 .employer {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .company-logo {
-    padding-right: 15px;
+  width: 75px;
 }
 
 .detail-list {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .position {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .company {
-    font-weight: normal;
+  font-weight: normal;
+  padding-right: 15px;
+  font-size: 17px;
+}
+
+.location {
+  color: $site-accent2;
+  font-size: 17px;
+}
+
+.skill-list > div > ul {
+
+  overflow-wrap: break-word;
+
+  li {
+    display: inline;
+  }
 }

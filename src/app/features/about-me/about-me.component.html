@@ -1,61 +1,189 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-4 visual col-margin">
-      <div class="experience-box row row-margin m-0">
+    <!-- Left Col Info -->
+    <div class="col-md-4 col-margin">
+      <div class="experience-box visual row row-margin">
         <img
           src="assets\images\ProfilePic.png"
           style="width: 100%"
           alt="ProfilePic"
         />
-        <div class="m-1 p-1">
+        <div class="block-container">
+          <!-- Contact Info -->
           <h2>Keaton Smith</h2>
-          <div>keatonsmith510@gmail.com</div>
-          <div>(334)-538-1572</div>
-          <div>Columbus, OH</div>
+          <div class="contact-info work-experience-block">
+            <div>
+              <a href="mailto:keatonsmith510@gmail.com"
+                ><i class="fa fa-envelope" aria-hidden="true"></i>
+                keatonsmith510@gmail.com</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/keaton-smith-8b5156144/"
+                target="/blank"
+              >
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                linkedin.com/keaton-smith
+              </a>
+            </div>
+
+            <div>
+              <a href="tel:334-538-1572"
+                ><i class="fa fa-phone" aria-hidden="true"></i> 334-538-1572</a
+              >
+            </div>
+            <div>
+              <i class="fa fa-home" aria-hidden="true"></i> Columbus, OH
+            </div>
+          </div>
+          <div
+            class="skill-list work-experience-block"
+            *ngIf="extraExperience.languages"
+          >
+            <div>
+              <div>Languages</div>
+              <ul>
+                <li *ngFor="let language of extraExperience.languages">
+                  {{ language }}
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="skill-list work-experience-block"
+            *ngIf="extraExperience.tools"
+          >
+            <div>
+              <div>Tools</div>
+              <ul>
+                <li *ngFor="let tool of extraExperience.tools">{{ tool }}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-list" *ngIf="extraExperience.other">
+            <div>
+              <div>Other</div>
+              <ul>
+                <li *ngFor="let thing of extraExperience.other">{{ thing }}</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Right Col Info -->
     <div class="col-md col-margin">
+      <!-- Education -->
+      <div class="experience-box visual row row-margin">
+        <div class="block-container">
+          <h2>
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education
+          </h2>
+          <div class="work-experience-block">
+            <div class="employer">
+              <table style="width: 100%">
+                <tr>
+                  <td>
+                    <label class="position">
+                      Bachelor's of Science in Computer Science
+                    </label>
+                    <label class="location">
+                      Specialization in Software Engineering
+                    </label>
+                  </td>
+                  <th rowspan="3" class="company-logo">
+                    <img
+                      src="/assets/images/bgsu.png"
+                      style="width: 50px; height: auto"
+                      alt="BGSUImage"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="company"
+                      >Bowling Green State University</label
+                    >
+                    <label class="location"
+                      ><i class="fa fa-globe" aria-hidden="true"></i>
+                      Bowling Green Ohio
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="tenure">
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+                      Aug 2015 - May 2019 &nbsp;
+                    </label>
+                    <label> GPA: 3.89</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Work Experience -->
       <div class="experience-box visual row row-margin">
         <div class="block-container" *ngIf="workExperience">
-          <h2>Work Experience</h2>
+          <h2>
+            <i class="fa fa-suitcase" aria-hidden="true"></i> Work Experience
+          </h2>
           <div *ngFor="let job of workExperience" class="work-experience-block">
             <div class="employer">
-              <label class="company-logo">
-                <img
-                  src="{{ job.image }}"
-                  style="width: 50px; height: auto"
-                  [alt]="job.employer + 'Image'"
-                />
-              </label>
-              <label>
-                <label class="position">{{ job.position }}</label>
-                <br />
-                <label class="company">{{ job.employer }}</label>
-              </label>
+              <table style="width: 100%">
+                <tr>
+                  <td class="position">{{ job.position }}</td>
+                  <th rowspan="3" class="company-logo">
+                    <img
+                      src="{{ job.image }}"
+                      style="width: 50px; height: auto"
+                      [alt]="job.employer + 'Image'"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="company">{{ job.employer }}</label>
+                    <label class="location"
+                      ><i class="fa fa-globe" aria-hidden="true"></i>
+                      {{ job.location }}
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tenure">
+                    <label>
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+                      {{ job.startDate }} - &nbsp;</label
+                    >
+                    <label [ngClass]="job.endDate == 'Current' ? 'current' : ''"
+                      >{{ job.endDate }}
+                    </label>
+                  </td>
+                </tr>
+              </table>
             </div>
-            <div class="tenure">
-              {{ job.startDate }} -
-              <label [ngClass]="job.endDate == 'Current' ? 'current' : ''">{{
-                job.endDate
-              }}</label>
-            </div>
-            <div>{{ job.location }}</div>
             <div>{{ job.description }}</div>
             <ul class="detail-list">
               <li *ngFor="let point of job.bulletPoints">{{ point }}</li>
             </ul>
+            <ul>
+              <li *ngFor="let link of job.links">
+                <a href="{{ link.url }}" target="/blank">{{ link.title }}</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <!-- Personal Projects -->
       <div class="experience-box visual row row-margin">
         <div class="block-container" *ngIf="true">
-          <h2>Education</h2>
-        </div>
-      </div>
-      <div class="experience-box visual row row-margin">
-        <div class="block-container" *ngIf="true">
-          <h2>Personal Projects</h2>
+          <h2>
+            <i class="fa fa-code-fork" aria-hidden="true"></i> Personal Projects
+          </h2>
         </div>
       </div>
     </div>

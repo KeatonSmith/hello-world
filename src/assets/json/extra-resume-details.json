@@ -1,0 +1,33 @@
+{
+  "languages": [
+    "TypeScript",
+    "Javascript",
+    "HTML",
+    "CSS/SCSS",
+    "Java",
+    "C#",
+    "C++",
+    "Ruby",
+    "SQL"
+  ],
+  "tools": [
+      "Angular",
+      "AngularJS",
+      "Jenkins",
+      "AWS",
+      "Unity 3D/2D",
+      "Selenium",
+      "Spring Boot",
+      "Postman",
+      "Soap UI",
+      "OpenGL"
+  ],
+  "other": [
+      "Visual Studio Code",
+      "Git",
+      "GitHub",
+      "G-Suite",
+      "Microsoft Office Suite"
+  ],
+  "personal-projects": []
+}

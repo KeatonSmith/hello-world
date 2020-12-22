@@ -5,13 +5,10 @@
     "endDate": "Current",
     "location": "Columbus, OH",
     "employer": "Olive",
-    "description": "I am currently working there",
-    "bulletPoints": ["Somethihng", "Blaj halajsd", "asdsadasdasd"],
-    "links": [
-      {
-        "title": "Something",
-        "url": "www.google.com"
-      }
+    "description": "",
+    "bulletPoints": [
+      "Develop Robotic Process Automations for customers in the health care industries", 
+      "Utilize a proprietary in-house IDE built upon Javascript with libraries such as Selenium and Lodash"
     ],
     "image": "/assets/images/olive.jfif"
   },
@@ -30,20 +27,21 @@
       "Leverage tools such as Jenkins and Concourse for CI/CD.",
       "Utilize New Relic and Contrast for monitoring capabilities."
     ],
+    "image": "/assets/images/nw.jfif",
     "links": [
       {
-        "title": "Something",
-        "url": "www.google.com"
+        "title": "Mutual funds page redesign and modernization",
+        "url": "https://nationwidefinancial.com/products/investments/mutual-funds/fund-list/fund-details/NWAGX",
+        "explanation": "A project at Nationwide in which I was allowed to lead. We created a reusable Angular 7 library that could be used on 3 sites while maintaining the same styling and functionality."
       }
-    ],
-    "image": "/assets/images/nw.jfif"
+    ]
   },
   {
     "position": "President / Founder",
     "startDate": "Sep 2017",
     "endDate": "May 2019",
     "location": "Bowling Green, OH",
-    "employer": "Falcon eSports (BGSU Student Organization)",
+    "employer": "Falcon eSports (BGSU Student Org)",
     "description": "",
     "bulletPoints": [
       "Organized and operated weekly competitive gaming events on campus.",
@@ -70,12 +68,6 @@
       "Worked in an existing test automation code base for SOAP and REST web services for enterprise customer information files.",
       "Developed new tests in Gherkin format from the ground-up to cover more test cases."
     ],
-    "links": [
-      {
-        "title": "Something",
-        "url": "www.google.com"
-      }
-    ],
     "image": "/assets/images/nw.jfif"
   },
   {
@@ -88,12 +80,6 @@
     "bulletPoints": [
       "Adapted legacy systems into modern programming paradigms.",
       "Ensured the quality of software that was actively shipped to customers in personal lines."
-    ],
-    "links": [
-      {
-        "title": "Something",
-        "url": "www.google.com"
-      }
     ],
     "image": "/assets/images/nw.jfif"
   },
@@ -109,12 +95,6 @@
       "Ensure proper functioning of restaurant through communication between managers and crew members",
       "Provide leadership on front line operations during peak restaurant hours",
       "Train newly hired employees to achieve high standards"
-    ],
-    "links": [
-      {
-        "title": "Something",
-        "url": "www.google.com"
-      }
     ],
     "image": "/assets/images/cmg.png"
   }
