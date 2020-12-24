@@ -3,44 +3,30 @@
     <!-- Left Col Info -->
     <div class="col-md-4 col-margin">
       <div class="experience-box visual row row-margin">
-        <img
-          src="assets\images\ProfilePic.png"
-          style="width: 100%"
-          alt="ProfilePic"
-        />
+        <img src="assets\images\ProfilePic.png" style="width: 100%" alt="ProfilePic" />
         <div class="block-container">
           <!-- Contact Info -->
           <h2>Keaton Smith</h2>
           <div class="contact-info work-experience-block">
             <div>
-              <a href="mailto:keatonsmith510@gmail.com"
-                ><i class="fa fa-envelope" aria-hidden="true"></i>
-                keatonsmith510@gmail.com</a
-              >
+              <a href="mailto:keatonsmith510@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                keatonsmith510@gmail.com</a>
             </div>
             <div>
-              <a
-                href="https://www.linkedin.com/in/keaton-smith-8b5156144/"
-                target="/blank"
-              >
+              <a href="https://www.linkedin.com/in/keaton-smith-8b5156144/" target="/blank">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                 linkedin.com/keaton-smith
               </a>
             </div>
 
             <div>
-              <a href="tel:334-538-1572"
-                ><i class="fa fa-phone" aria-hidden="true"></i> 334-538-1572</a
-              >
+              <a href="tel:334-538-1572"><i class="fa fa-phone" aria-hidden="true"></i> 334-538-1572</a>
             </div>
             <div>
               <i class="fa fa-home" aria-hidden="true"></i> Columbus, OH
             </div>
           </div>
-          <div
-            class="skill-list work-experience-block"
-            *ngIf="extraExperience.languages"
-          >
+          <div class="skill-list work-experience-block" *ngIf="extraExperience.languages">
             <div>
               <div>Languages</div>
               <ul>
@@ -50,22 +36,21 @@
               </ul>
             </div>
           </div>
-          <div
-            class="skill-list work-experience-block"
-            *ngIf="extraExperience.tools"
-          >
+          <div class="skill-list work-experience-block" *ngIf="extraExperience.tools">
             <div>
-              <div>Tools</div>
-              <ul>
-                <li *ngFor="let tool of extraExperience.tools">{{ tool }}</li>
-              </ul>
+              <div>Tools and Frameworks</div>
+              <div>
+                <div *ngFor="let tool of extraExperience.tools">{{ tool }}</div>
+              </div>
             </div>
           </div>
-          <div class="skill-list" *ngIf="extraExperience.other">
+          <div class="skill-list work-experience-block" *ngIf="extraExperience.other">
             <div>
               <div>Other</div>
               <ul>
-                <li *ngFor="let thing of extraExperience.other">{{ thing }}</li>
+                <li *ngFor="let thing of extraExperience.other">
+                  {{ thing }}
+                </li>
               </ul>
             </div>
           </div>
@@ -93,20 +78,13 @@
                     </label>
                   </td>
                   <th rowspan="3" class="company-logo">
-                    <img
-                      src="/assets/images/bgsu.png"
-                      style="width: 50px; height: auto"
-                      alt="BGSUImage"
-                    />
+                    <img src="/assets/images/bgsu.png" style="width: 50px; height: auto" alt="BGSUImage" />
                   </th>
                 </tr>
                 <tr>
                   <td>
-                    <label class="company"
-                      >Bowling Green State University</label
-                    >
-                    <label class="location"
-                      ><i class="fa fa-globe" aria-hidden="true"></i>
+                    <label class="company">Bowling Green State University</label>
+                    <label class="location"><i class="fa fa-globe" aria-hidden="true"></i>
                       Bowling Green Ohio
                     </label>
                   </td>
@@ -137,18 +115,13 @@
                 <tr>
                   <td class="position">{{ job.position }}</td>
                   <th rowspan="3" class="company-logo">
-                    <img
-                      src="{{ job.image }}"
-                      style="width: 50px; height: auto"
-                      [alt]="job.employer + 'Image'"
-                    />
+                    <img src="{{ job.image }}" style="width: 50px; height: auto" [alt]="job.employer + 'Image'" />
                   </th>
                 </tr>
                 <tr>
                   <td>
                     <label class="company">{{ job.employer }}</label>
-                    <label class="location"
-                      ><i class="fa fa-globe" aria-hidden="true"></i>
+                    <label class="location"><i class="fa fa-globe" aria-hidden="true"></i>
                       {{ job.location }}
                     </label>
                   </td>
@@ -157,10 +130,8 @@
                   <td class="tenure">
                     <label>
                       <i class="fa fa-calendar" aria-hidden="true"></i>
-                      {{ job.startDate }} - &nbsp;</label
-                    >
-                    <label [ngClass]="job.endDate == 'Current' ? 'current' : ''"
-                      >{{ job.endDate }}
+                      {{ job.startDate }} - &nbsp;</label>
+                    <label [ngClass]="job.endDate == 'Current' ? 'current' : ''">{{ job.endDate }}
                     </label>
                   </td>
                 </tr>
@@ -180,12 +151,61 @@
       </div>
       <!-- Personal Projects -->
       <div class="experience-box visual row row-margin">
-        <div class="block-container" *ngIf="true">
+        <div class="block-container">
           <h2>
             <i class="fa fa-code-fork" aria-hidden="true"></i> Personal Projects
           </h2>
+          <div *ngFor="let project of personalProjects" class="work-experience-block">
+            <div class="employer">
+              <table style="width: 100%">
+                <tr>
+                  <td class="position">{{ project.name }}</td>
+                  <th rowspan="3" class="company-logo" *ngIf="project.logo">
+                    <img src="{{ project.logo }}" style="width: 50px; height: auto" [alt]="project.name + 'Image'" />
+                  </th>
+                </tr>
+                <tr>
+                  <td class="tenure">
+                    <label style="padding-right: 20px">
+                      <i class="fa fa-calendar" aria-hidden="true"></i>
+                      {{ project.dateComplete }}
+                    </label>
+                    <label class="location">
+                      {{ project.technology }}
+                    </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div>
+              {{ project.description }}
+            </div>
+            <div>
+              <a *ngIf="project.aboutLink" href="{{ project.aboutLink }}" target="/blank"><i class="fa fa-book"
+                  aria-hidden="true"></i>
+                Read More
+              </a>
+              <a *ngIf="project.gitLink" href="{{ project.gitLink }}" target="/blank"><i class="fa fa-gitlab"
+                  aria-hidden="true"></i>
+                Git
+              </a>
+              <a *ngIf="project.localPlayLink" href="{{ project.localPlayLink }}"><i class="fa fa-gamepad"
+                  aria-hidden="true"></i> Play Now
+              </a>
+              <a *ngIf="project.downloadLink" href="{{ project.downloadLink }}" target="/blank"><i
+                  class="fa fa-download" aria-hidden="true"></i> Download
+              </a>
+            </div>
+            <div class="container" *ngIf="project.images[0]">
+              <div class="row">
+                <div class="col" *ngFor="let image of project.images">
+                  <img src="{{ image }}" style="width: 50%; height: auto" [alt]="project.name + 'Image'" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div>`

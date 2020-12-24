@@ -11,23 +11,23 @@
     "SQL"
   ],
   "tools": [
-      "Angular",
-      "AngularJS",
-      "Jenkins",
-      "AWS",
-      "Unity 3D/2D",
-      "Selenium",
-      "Spring Boot",
-      "Postman",
-      "Soap UI",
-      "OpenGL"
+    "Angular",
+    "AngularJS",
+    "Bootstrap",
+    "Unity 3D/2D",
+    "Selenium",
+    "Spring Boot",
+    "Postman",
+    "Soap UI",
+    "OpenGL"
   ],
   "other": [
-      "Visual Studio Code",
-      "Git",
-      "GitHub",
-      "G-Suite",
-      "Microsoft Office Suite"
-  ],
-  "personal-projects": []
+    "Jenkins",
+    "AWS",
+    "Visual Studio Code",
+    "Git",
+    "GitHub",
+    "G-Suite",
+    "Microsoft Office Suite"
+  ]
 }
