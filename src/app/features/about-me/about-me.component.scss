@@ -5,6 +5,12 @@
   flex-direction: row;
 }
 
+h3 {
+  color: $site-accent2;
+  font-size: 20px;
+  padding-left: 10px;
+  font-weight: 300;
+}
 .experience-box {
 }
 
@@ -89,7 +95,21 @@
   }
 }
 
-a {
+.contact-info > table > tr {
+  td:nth-child(1) {
+    color: $site-main-color;
+    text-align: center;
+  }
+  td:nth-child(2) {
+    * {
+      color: black;
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
+}
+
+.proj-btns > a {
   font-size: 16px;
   background-color: $site-main-color;
   color: white;
@@ -99,7 +119,6 @@ a {
 }
 
 .skill-list > div > div {
-
   div {
     display: inline;
     background-color: $site-accent2;
@@ -108,4 +127,22 @@ a {
     border-radius: 4px;
     margin: 7px 7px 7px 0px;
   }
+}
+
+.skill-pill {
+  display: inline;
+  // background-color: $site-accent2;
+  color: $site-accent;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin: 7px 7px 7px 0px;
+  border: 1px solid $site-accent;
+}
+
+.skill-section-name {
+  text-align: center;
+  font-size: 20px;
+  color: $site-main-color;
+  border-bottom: 1px solid $site-main-color;
+  margin-bottom: 15px;
 }

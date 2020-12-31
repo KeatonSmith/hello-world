@@ -7,53 +7,77 @@
         <div class="block-container">
           <!-- Contact Info -->
           <h2>Keaton Smith</h2>
+          <h3>Application Developer</h3>
           <div class="contact-info work-experience-block">
-            <div>
-              <a href="mailto:keatonsmith510@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
-                keatonsmith510@gmail.com</a>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/keaton-smith-8b5156144/" target="/blank">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                linkedin.com/keaton-smith
-              </a>
-            </div>
+            <table>
+              <tr>
+                <td>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </td>
+                <td>
+                  <a href="mailto:keatonsmith510@gmail.com">
+                    keatonsmith510@gmail.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                </td>
+                <td>
+                  <a href="tel:334-538-1572"> 334-538-1572</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/in/keaton-smith-8b5156144/" target="/blank">
 
-            <div>
-              <a href="tel:334-538-1572"><i class="fa fa-phone" aria-hidden="true"></i> 334-538-1572</a>
-            </div>
-            <div>
-              <i class="fa fa-home" aria-hidden="true"></i> Columbus, OH
-            </div>
+                    linkedin.com/keaton-smith
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </td>
+                <td>
+                  <label>Columbus, OH</label>
+                </td>
+              </tr>
+            </table>
           </div>
-          <div class="skill-list work-experience-block" *ngIf="extraExperience.languages">
+          <div class="work-experience-block" *ngIf="extraExperience.languages">
             <div>
-              <div>Languages</div>
-              <ul>
-                <li *ngFor="let language of extraExperience.languages">
-                  {{ language }}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="skill-list work-experience-block" *ngIf="extraExperience.tools">
-            <div>
-              <div>Tools and Frameworks</div>
-              <div>
-                <div *ngFor="let tool of extraExperience.tools">{{ tool }}</div>
+              <div class="skill-section-name">Languages</div>
+              <div class="skill-pill" *ngFor="let language of extraExperience.languages">
+                <label>{{ language }}</label>
               </div>
             </div>
           </div>
-          <div class="skill-list work-experience-block" *ngIf="extraExperience.other">
+          <div class="work-experience-block" *ngIf="extraExperience.tools">
             <div>
-              <div>Other</div>
-              <ul>
-                <li *ngFor="let thing of extraExperience.other">
-                  {{ thing }}
-                </li>
-              </ul>
+              <div class="skill-section-name">Tools and Frameworks</div>
+              <div class="skill-pill" *ngFor="let tool of extraExperience.tools"><label>{{ tool }}</label></div>
             </div>
           </div>
+          <div class="work-experience-block" *ngIf="extraExperience.other">
+            <div>
+              <div class="skill-section-name">Other</div>
+              <div class="skill-pill" *ngFor="let thing of extraExperience.other">
+                <label>{{ thing }}</label>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="work-experience-block" *ngIf="extraExperience.other">
+            <div>
+              <div>Other</div>
+                <div class="skill-pill" *ngFor="let thing of extraExperience.other">
+                  <label>{{ thing }}</label>
+                </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -180,7 +204,7 @@
             <div>
               {{ project.description }}
             </div>
-            <div>
+            <div class="proj-btns">
               <a *ngIf="project.aboutLink" href="{{ project.aboutLink }}" target="/blank"><i class="fa fa-book"
                   aria-hidden="true"></i>
                 Read More
