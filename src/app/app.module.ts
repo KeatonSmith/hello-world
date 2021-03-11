@@ -8,6 +8,7 @@ import { HomeComponent } from '@src/app/features/home/home.component';
 import { MyCompComponent } from '@src/app/components/my-comp/my-comp.component';
 import { AboutMeComponent } from '@src/app/features/about-me/about-me.component';
 import { SiteHeaderComponent } from './components/site-header/site-header.component';
+import { ImageModalModule } from './components/image-modal/image-modal.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -17,13 +18,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     MyCompComponent,
     AboutMeComponent,
-    SiteHeaderComponent
+    SiteHeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    NgbModule
+    NgbModule,
+    ImageModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

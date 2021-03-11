@@ -133,43 +133,46 @@
           <h2>
             <i class="fa fa-suitcase" aria-hidden="true"></i> Work Experience
           </h2>
-          <div *ngFor="let job of workExperience" class="work-experience-block">
-            <div class="employer">
-              <table style="width: 100%">
-                <tr>
-                  <td class="position">{{ job.position }}</td>
-                  <th rowspan="3" class="company-logo">
-                    <img src="{{ job.image }}" style="width: 50px; height: auto" [alt]="job.employer + 'Image'" />
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="company">{{ job.employer }}</label>
-                    <label class="location"><i class="fa fa-globe" aria-hidden="true"></i>
-                      {{ job.location }}
-                    </label>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tenure">
-                    <label>
-                      <i class="fa fa-calendar" aria-hidden="true"></i>
-                      {{ job.startDate }} - &nbsp;</label>
-                    <label [ngClass]="job.endDate == 'Current' ? 'current' : ''">{{ job.endDate }}
-                    </label>
-                  </td>
-                </tr>
-              </table>
+          <div *ngFor="let job of workExperience;let indexOfJob=index;">
+            <div *ngIf="indexOfJob == expandedJobs"  class="proj-btns" ><button (click)="expandedJobHistory = !expandedJobHistory">Click here to see experience before graduation! <i style="width:13px" [ngClass]="expandedJobHistory ? 'fa fa-caret-down':'fa fa-caret-right'" aria-hidden="true"></i></button></div>
+            <div [style.display]="(indexOfJob >= expandedJobs) && !expandedJobHistory ? 'none':'block'" class="work-experience-block">
+              <div class="employer">
+                <table style="width: 100%">
+                  <tr>
+                    <td class="position">{{ job.position }}</td>
+                    <th rowspan="3" class="company-logo">
+                      <img src="{{ job.image }}" style="width: 50px; height: auto" [alt]="job.employer + 'Image'" />
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="company">{{ job.employer }}</label>
+                      <label class="location"><i class="fa fa-globe" aria-hidden="true"></i>
+                        {{ job.location }}
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tenure">
+                      <label>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        {{ job.startDate }} - &nbsp;</label>
+                      <label [ngClass]="job.endDate == 'Current' ? 'current' : ''">{{ job.endDate }}
+                      </label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div>{{ job.description }}</div>
+              <ul class="detail-list">
+                <li *ngFor="let point of job.bulletPoints">{{ point }}</li>
+              </ul>
+              <ul class="detail-list">
+                <li *ngFor="let link of job.links">
+                  <a href="{{ link.url }}" target="/blank">{{ link.title }}</a>
+                </li>
+              </ul>
             </div>
-            <div>{{ job.description }}</div>
-            <ul class="detail-list">
-              <li *ngFor="let point of job.bulletPoints">{{ point }}</li>
-            </ul>
-            <ul>
-              <li *ngFor="let link of job.links">
-                <a href="{{ link.url }}" target="/blank">{{ link.title }}</a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -204,7 +207,7 @@
             <div>
               {{ project.description }}
             </div>
-            <div class="proj-btns">
+            <div class="proj-btns btn-pad">
               <a *ngIf="project.aboutLink" href="{{ project.aboutLink }}" target="/blank"><i class="fa fa-book"
                   aria-hidden="true"></i>
                 Read More
@@ -220,10 +223,11 @@
                   class="fa fa-download" aria-hidden="true"></i> Download
               </a>
             </div>
-            <div class="container" *ngIf="project.images[0]">
+            <div class="container" style="padding-top:20px;" *ngIf="project.images[0]">
               <div class="row">
-                <div class="col" *ngFor="let image of project.images">
-                  <img src="{{ image }}" style="width: 50%; height: auto" [alt]="project.name + 'Image'" />
+                <div class="col" *ngFor="let image of project.images;let imgIndex=index;">
+                  <!-- <img src="{{ image }}" style="width: 50%; height: auto" [alt]="project.name + 'Image'" /> -->
+                  <ng-ns-image-modal imageSource='{{ image }}' altText="{{project.name}}Image"></ng-ns-image-modal>
                 </div>
               </div>
             </div>

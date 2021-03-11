@@ -13,6 +13,7 @@
   "tools": [
     "Angular",
     "AngularJS",
+    "Puppeteer",
     "Bootstrap",
     "Unity 3D/2D",
     "Selenium",

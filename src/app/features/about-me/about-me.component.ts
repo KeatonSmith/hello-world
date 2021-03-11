@@ -15,6 +15,8 @@ export class AboutMeComponent implements OnInit {
   extraExperience: any = JSON.parse(JSON.stringify((extra_experience_data as any)["default"]));
   personalProjects: any[] =  JSON.parse(JSON.stringify((personal_projects_data as any[])["default"]));
 
+  expandedJobs = 2;
+  expandedJobHistory = false;
   constructor() { }
 
   ngOnInit(): void {

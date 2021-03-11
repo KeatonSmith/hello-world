@@ -1,0 +1,9 @@
+<img class="smallImg" src="{{ imageSource }}" style="width: 200px; height: auto" [alt]="altText" id="{{altText}}" (click)="modalClick()" />
+
+
+<!-- The Modal -->
+<div *ngIf="modalId" id="{{modalId}}" class="modal">
+    <span class="close" id="{{modalId}}Close" (click)="closeClick()">&times;</span>
+    <img class="modal-content" id="{{modalId}}Img">
+    <div id="{{modalId}}Caption"></div>
+</div>

@@ -57,6 +57,7 @@ h3 {
 
 .employer {
   font-size: 20px;
+  
 }
 
 .company-logo {
@@ -109,7 +110,7 @@ h3 {
   }
 }
 
-.proj-btns > a {
+.proj-btns > * {
   font-size: 16px;
   background-color: $site-main-color;
   color: white;
@@ -132,17 +133,24 @@ h3 {
 .skill-pill {
   display: inline;
   // background-color: $site-accent2;
-  color: $site-accent;
+  color: $site-main-color;
   padding: 1px 6px;
   border-radius: 4px;
   margin: 7px 7px 7px 0px;
-  border: 1px solid $site-accent;
+  border: 1px solid $site-main-color;
 }
 
 .skill-section-name {
   text-align: center;
   font-size: 20px;
-  color: $site-main-color;
-  border-bottom: 1px solid $site-main-color;
+  color: $site-accent;
+  // border-bottom: 1px solid $site-accent;
   margin-bottom: 15px;
+}
+
+.expandable-experience {
+}
+
+.btn-pad {
+  padding: 17px 0px 0px 0px;
 }
