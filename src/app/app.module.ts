@@ -10,7 +10,7 @@ import { AboutMeComponent } from '@src/app/features/about-me/about-me.component'
 import { SiteHeaderComponent } from './components/site-header/site-header.component';
 import { ImageModalModule } from './components/image-modal/image-modal.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     ImageModalModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

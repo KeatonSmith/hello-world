@@ -1,14 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
 // Import common styles
-@import 'app-common';
-@import '~bootstrap/dist/css/bootstrap.css';
+@import "app-common";
+@import "~bootstrap/dist/css/bootstrap.css";
 
+// $site-main-color: #ff4800;
+$site-main-color: #ff753f;
 
-$site-main-color: #ff4800;
 $site-accent: #343a40;
 $site-accent2: #a3a2a2;
+$site-contrast-text: white;
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
 
 // $site-main-color: #d113a8;
 // $site-accent: #343a40;
 // $site-accent2: #00b7ff;
+.dark-mode {
+    background-color: $site-accent !important;
+    color: white !important;
+    $site-main-color: purple;
+}

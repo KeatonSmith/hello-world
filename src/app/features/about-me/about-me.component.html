@@ -1,52 +1,57 @@
 <div class="container">
   <div class="row">
     <!-- Left Col Info -->
-    <div class="col-md-4 col-margin">
+    <div class="col-lg-4 col-margin ">
       <div class="experience-box visual row row-margin">
-        <img src="assets\images\ProfilePic.png" style="width: 100%" alt="ProfilePic" />
-        <div class="block-container">
+        <div class="block-container no-pad">
           <!-- Contact Info -->
-          <h2>Keaton Smith</h2>
-          <h3>Application Developer</h3>
-          <div class="contact-info work-experience-block">
-            <table>
-              <tr>
-                <td>
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                </td>
-                <td>
-                  <a href="mailto:keatonsmith510@gmail.com">
-                    keatonsmith510@gmail.com</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <i class="fa fa-mobile" aria-hidden="true"></i>
-                </td>
-                <td>
-                  <a href="tel:334-538-1572"> 334-538-1572</a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </td>
-                <td>
-                  <a href="https://www.linkedin.com/in/keaton-smith-8b5156144/" target="/blank">
+          <div class="row">
+            <img class="col-md foo" src="assets\images\ProfilePic.png" style="width: 100%; height:auto;"
+              alt="ProfilePic" />
+            <div class="col-md">
+              <h2>Keaton Smith</h2>
+              <h3>Application Developer</h3>
+              <div class="contact-info work-experience-block">
+                <table>
+                  <tr>
+                    <td>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <a href="mailto:keatonsmith510@gmail.com">
+                        keatonsmith510@gmail.com</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="fa fa-mobile" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <a href="tel:334-538-1572"> 334-538-1572</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <a href="https://www.linkedin.com/in/keaton-smith-8b5156144/" target="/blank">
 
-                    linkedin.com/keaton-smith
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>
-                </td>
-                <td>
-                  <label>Columbus, OH</label>
-                </td>
-              </tr>
-            </table>
+                        linkedin.com/keaton-smith
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <label>Columbus, OH</label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
           <div class="work-experience-block" *ngIf="extraExperience.languages">
             <div>
@@ -70,19 +75,11 @@
               </div>
             </div>
           </div>
-          <!-- <div class="work-experience-block" *ngIf="extraExperience.other">
-            <div>
-              <div>Other</div>
-                <div class="skill-pill" *ngFor="let thing of extraExperience.other">
-                  <label>{{ thing }}</label>
-                </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
     <!-- Right Col Info -->
-    <div class="col-md col-margin">
+    <div class="col-lg col-margin">
       <!-- Education -->
       <div class="experience-box visual row row-margin">
         <div class="block-container">
@@ -109,7 +106,7 @@
                   <td>
                     <label class="company">Bowling Green State University</label>
                     <label class="location"><i class="fa fa-globe" aria-hidden="true"></i>
-                      Bowling Green Ohio
+                      Bowling Green, Ohio
                     </label>
                   </td>
                 </tr>
@@ -134,8 +131,13 @@
             <i class="fa fa-suitcase" aria-hidden="true"></i> Work Experience
           </h2>
           <div *ngFor="let job of workExperience;let indexOfJob=index;">
-            <div *ngIf="indexOfJob == expandedJobs"  class="proj-btns" ><button (click)="expandedJobHistory = !expandedJobHistory">Click here to see experience before graduation! <i style="width:13px" [ngClass]="expandedJobHistory ? 'fa fa-caret-down':'fa fa-caret-right'" aria-hidden="true"></i></button></div>
-            <div [style.display]="(indexOfJob >= expandedJobs) && !expandedJobHistory ? 'none':'block'" class="work-experience-block">
+            <div *ngIf="indexOfJob == expandedJobs" class="proj-btns">
+              <button (click)="expandedJobHistory = !expandedJobHistory" style="min-width: 100%;">Click here to see
+                experience before graduation!
+                <i style="width:13px" [ngClass]="expandedJobHistory ? 'fa fa-caret-down':'fa fa-caret-right'"
+                  aria-hidden="true"></i></button></div>
+            <div [style.display]="(indexOfJob >= expandedJobs) && !expandedJobHistory ? 'none':'block'"
+              class="work-experience-block">
               <div class="employer">
                 <table style="width: 100%">
                   <tr>

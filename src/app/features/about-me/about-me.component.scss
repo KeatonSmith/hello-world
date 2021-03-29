@@ -1,6 +1,30 @@
 @import "./../../../styles.scss";
 
-.about-me-container {
+.extra-details {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  display: none;
+}
+.extra-details.expanded {
+  opacity: 1;
+  height: auto;
+  display:block;
+}
+.no-pad {
+  padding: 0;
+}
+@media (max-width: $lg) and (min-width: $md) {
+  .foo {
+    // max-width:40%;
+    // max-height: auto;
+    flex: 0 0 41.666667% !important;
+    max-width: 41.666667% !important;
+    // @include col-md-4;
+  }
+}
+​ .about-me-container {
   display: flex;
   flex-direction: row;
 }
@@ -57,7 +81,6 @@ h3 {
 
 .employer {
   font-size: 20px;
-  
 }
 
 .company-logo {
@@ -103,7 +126,7 @@ h3 {
   }
   td:nth-child(2) {
     * {
-      color: black;
+      color: $site-accent2;
       text-align: left;
       padding-left: 15px;
     }

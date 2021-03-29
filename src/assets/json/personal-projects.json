@@ -5,7 +5,6 @@
     "logo": "",
     "gitLink": "https://github.com/KeatonSmith/hello-world",
     "localPlayLink": "",
-    "aboutLink": "/projects/keaton-web",
     "downloadLink": "",
     "dateComplete": "Dec 2020 - Ongoing",
     "description": "This is the site you are currently on! This was initially made to be a testing ground for me to learn how to use DevOps tools and practices, but evolved into a place for me to document my career and personal projects. I wrote this using Angular 9 and have it set up with a full DevOps pipeline using AWS cloud infrastructure. I have Jenkins sitting on an EC2 instance that tests and deploys this site to an S3 bucket with every push I make to GitHub. \n This has been a fun project to excercise my web-dev muscles.",
@@ -17,8 +16,6 @@
     "technology": "Unity 2D Game",
     "logo": "/assets/images/projects/hivemind/hivemindIcon.webp",
     "gitLink": "https://gitlab.com/KeatonS/hivemind",
-    "localPlayLink": "/hivemind",
-    "aboutLink": "/projects/hivemind",
     "downloadLink": "https://play.google.com/store/apps/details?id=com.KeatonSmithGames.HiveMind",
     "dateComplete": "Jan 2020",
     "description": "My first real 'completed' personal project. This is a Unity 2D game where you control 2 ants at once and try to protect the eggs of your anthill from invading wasps. This game has been published on the Google Play Store for download on Android devices, with an iOS and Web version hopefully coming soon!",
@@ -33,11 +30,16 @@
     "logo": "",
     "gitLink": "https://gitlab.com/DBobb/CS4540_SP18_G10",
     "localPlayLink": "",
-    "aboutLink": "/projects/crystalcampaign",
     "downloadLink": "",
     "dateComplete": "May 2018",
     "description": "My first ever Unity Project made in 3D. This was a part of a capstone style project at school where I worked with 2 other developers and 2 artists.",
     "images": [
+      "/assets/images/projects/crystal-campaign/AotCC1.png",
+      "/assets/images/projects/crystal-campaign/AotCC2.png",
+      "/assets/images/projects/crystal-campaign/AotCC3.png",
+      "/assets/images/projects/crystal-campaign/AotCC4.png",
+      "/assets/images/projects/crystal-campaign/AotCC5.png",
+      "/assets/images/projects/crystal-campaign/AotCC6.png"
     ]
   },
   {
@@ -46,7 +48,6 @@
     "logo": "/assets/images/falconesports/icons/FalconeSportsLogo.png",
     "gitLink": "",
     "localPlayLink": "",
-    "aboutLink": "/projects/falconesports",
     "downloadLink": "",
     "dateComplete": "May 2019",
     "description": "The student org that I founded and was the acting president of. In addition to planning and running events, I made a lot of cool artwork for our promotional posters.",
