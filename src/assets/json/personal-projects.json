@@ -6,7 +6,7 @@
     "gitLink": "https://github.com/KeatonSmith/hello-world",
     "localPlayLink": "",
     "downloadLink": "",
-    "dateComplete": "Dec 2020 - Ongoing",
+    "dateComplete": "Dec 2021 - Ongoing",
     "description": "This is the site you are currently on! This was initially made to be a testing ground for me to learn how to use DevOps tools and practices, but evolved into a place for me to document my career and personal projects. I wrote this using Angular 9 and have it set up with a full DevOps pipeline using AWS cloud infrastructure. I have Jenkins sitting on an EC2 instance that tests and deploys this site to an S3 bucket with every push I make to GitHub. \n This has been a fun project to excercise my web-dev muscles.",
     "images": [
     ]

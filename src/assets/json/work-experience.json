@@ -1,14 +1,16 @@
 [
   {
     "position": "Software Automation Engineer",
-    "startDate": "Sept 2020",
+    "startDate": "Oct 2020",
     "endDate": "Current",
     "location": "Columbus, OH",
     "employer": "Olive",
     "description": "",
     "bulletPoints": [
-      "Develop Robotic Process Automations for customers in the health care industries", 
-      "Utilize a proprietary in-house IDE built upon Javascript with libraries such as Selenium and Lodash"
+      "Develop Robotic Process automations for customers in the healthcare industry.", 
+      "Use Node JS, Axios, and Puppeteer to navigate through insurance web portals to automatically collect data.",
+      "Utilize a proprietary, in-house IDE built upon Javascript and Selenium to create custom web automations.",
+      "Lead new initiatives on the team for increasing performance of data collection through usage of backend APIs on websites, as opposed to traditional web-based data-scraping."
     ],
     "image": "/assets/images/olive.jfif"
   },
