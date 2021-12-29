@@ -1,15 +1,32 @@
-[
+[{
+    "position": "Senior Software Engineer - IT Innovation",
+    "startDate": "Oct 2021",
+    "endDate": "Current",
+    "location": "Columbus, OH",
+    "employer": "Nationwide",
+    "description": "",
+    "bulletPoints": [
+      "Incorporating new technologies into the company by developing proof of concept web applications.",
+      "Utilizing full DevOps workflows within AWS to automate all code deployment and testing processes.",
+      "Using tools new to the Enterprise like Launch Darkly, Storybook and FullStory."
+    ],
+    "image": "/assets/images/nw.jfif",
+    "links": [{
+      "title": "Nationwide ThreeSixZero - Quick Quote tool for customers",
+      "url": "https://threesixzero.nationwide.com/landing"
+    }]
+  },
   {
     "position": "Software Automation Engineer",
-    "startDate": "Oct 2020",
-    "endDate": "Current",
+    "startDate": "Sept 2020",
+    "endDate": "Oct 2021",
     "location": "Columbus, OH",
     "employer": "Olive",
     "description": "",
     "bulletPoints": [
-      "Develop Robotic Process automations for customers in the healthcare industry.", 
-      "Use Node JS, Axios, and Puppeteer to navigate through insurance web portals to automatically collect data.",
-      "Utilize a proprietary, in-house IDE built upon Javascript and Selenium to create custom web automations.",
+      "Developed Robotic Process automations for customers in the healthcare industry.",
+      "Used Node JS, Axios, and Puppeteer to navigate through insurance web portals to automatically collect data.",
+      "Utilized a proprietary, in-house IDE built upon Javascript and Selenium to create custom web automations.",
       "Lead new initiatives on the team for increasing performance of data collection through usage of backend APIs on websites, as opposed to traditional web-based data-scraping."
     ],
     "image": "/assets/images/olive.jfif"
@@ -30,13 +47,11 @@
       "Utilize New Relic and Contrast for monitoring capabilities."
     ],
     "image": "/assets/images/nw.jfif",
-    "links": [
-      {
-        "title": "Mutual funds page redesign and modernization",
-        "url": "https://nationwidefinancial.com/products/investments/mutual-funds/fund-list/fund-details/NWAGX",
-        "explanation": "A project at Nationwide in which I was allowed to lead. We created a reusable Angular 7 library that could be used on 3 sites while maintaining the same styling and functionality."
-      }
-    ]
+    "links": [{
+      "title": "Mutual funds page redesign and modernization",
+      "url": "https://nationwidefinancial.com/products/investments/mutual-funds/fund-list/fund-details/NWAGX",
+      "explanation": "A project at Nationwide in which I was allowed to lead. We created a reusable Angular 7 library that could be used on 3 sites while maintaining the same styling and functionality."
+    }]
   },
   {
     "position": "President / Founder",

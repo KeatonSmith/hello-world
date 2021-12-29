@@ -20,7 +20,9 @@
     "Spring Boot",
     "Postman",
     "Soap UI",
-    "OpenGL"
+    "OpenGL",
+    "Launch Darkly",
+    "Storybook"
   ],
   "other": [
     "Jenkins",
